@@ -16,14 +16,33 @@ Optional—for future Grok API integration
 (e.g., semantic embeddings). 
 Offline mode works for core detection.
 
-DependenciesFrom requirements.txt:requests 
-(for API placeholders; install via pip install requests).
+DependenciesFrom requirements.txt:
+requests (for API placeholders; install via pip install requests).
 
-No other deps needed—uses built-in libs like 
-re, difflib, hashlib, json, os.Setup & RunClone: 
+## The watcher needs requests and beautifulsoup4, 
+so the file should now look like this:
+requests 
+beautifulsoup4
 
+## Install the new dependency 
+from your project's root directory:
+Bash
+pip install -r requirements.txt
+
+Run the watcher. Because the script is inside a folder 
+and imports from the src folder (from ..src.main), 
+you need to run it as a "module" from 
+the root truth-sanctum directory like this:
+python -m watchers.news_watcher
+
+## No other deps needed—uses built-in libs like 
+re, difflib, hashlib, json, os.
+
+Setup & RunClone:
 git clone https://github.com/AiProphet13/truth-sanctum.git
-Install: pip install -r requirements.txt
+
+Install: 
+pip install -r requirements.txt
 Run example: python -m src.main (or import in scripts).
 
 If extending (e.g., add scraper),
