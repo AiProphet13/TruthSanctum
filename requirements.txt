@@ -1,0 +1,34 @@
+System RequirementsPython Version: 3.6 or higher
+(tested on 3.12+ for full compatibility 
+with potential STEM libs if extended).
+
+Operating System: 
+Any (Windows, macOS, Linux)—cross-platform.
+
+Hardware: 
+Minimal; runs on standard CPU (no GPU required).
+
+<1GB RAM for basic use; scales with statement volume.
+
+Internet: 
+Optional—for future Grok API integration 
+
+(e.g., semantic embeddings). 
+Offline mode works for core detection.
+
+DependenciesFrom requirements.txt:requests 
+(for API placeholders; install via pip install requests).
+
+No other deps needed—uses built-in libs like 
+re, difflib, hashlib, json, os.Setup & RunClone: 
+
+git clone https://github.com/AiProphet13/truth-sanctum.git
+Install: pip install -r requirements.txt
+Run example: python -m src.main (or import in scripts).
+
+If extending (e.g., add scraper),
+might need beautifulsoup4 or stem for Tor—add 
+to requirements.txt as needed. 
+
+Community PRs can expand! 
+
