@@ -3,7 +3,10 @@ import json
 import hashlib
 # import requests  # Uncomment for Grok API
 
-from entropy_calculator import flag_high_entropy
+try:
+    from entropy_calculator import flag_high_entropy
+except ImportError:
+    from src.entropy_calculator import flag_high_entropy
 
 # HOPE Gates
 def crystal_log(data: dict) -> str:
