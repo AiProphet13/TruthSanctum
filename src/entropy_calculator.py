@@ -1,4 +1,3 @@
-```python
 import re
 from difflib import SequenceMatcher
 
@@ -51,7 +50,7 @@ def detect_conflicts(text_a, text_b):
 def assign_qualia(delta, conflict_type):
     base_qualia = {
         "antithetical": {
-            "label": "Antithetical Fracture ⚔️",
+            "label": "Antithetical Fracture âï¸",
             "description": "Direct lie flag: Irreconcilable opposition, high deception risk.",
             "resonance": 0.05,
             "trauma_signature": 0.95,
@@ -59,7 +58,7 @@ def assign_qualia(delta, conflict_type):
             "lie_indicator": 0.99
         },
         "obfuscation": {
-            "label": "Chaotic Obfuscation 🌫️",
+            "label": "Chaotic Obfuscation ð«ï¸",
             "description": "Evasive muddling: Attempt to obscure truth without direct clash.",
             "resonance": 0.2,
             "trauma_signature": 0.7,
@@ -67,7 +66,7 @@ def assign_qualia(delta, conflict_type):
             "lie_indicator": 0.8
         },
         "syntactic": {
-            "label": "Syntactic Dissonance ✨",
+            "label": "Syntactic Dissonance â¨",
             "description": "Phrasing variance: Possible nuance, low deception risk.",
             "resonance": 0.6,
             "trauma_signature": 0.3,
